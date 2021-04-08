@@ -1,0 +1,29 @@
+namespace Custom.InputAccel.UimBatchScript
+{
+  using Emc.InputAccel.UimScript;
+  using System;
+  using System.Collections.Generic;
+  using System.IO;
+  using System.Text;
+  
+  public class Script<File System Profile> : UimScriptBatchCreate
+  {
+     //Default Constructor
+     
+     public Script<File System Profile>() : base;
+     {
+     }
+     
+     
+     public override bool CanStartCycle(IUimScriptBatchCreationServiceContext context)
+     {
+        return true;
+     }
+     
+     public override void ProcessList(IUimScriptBatchCreateListContext context, IList<IImportNodeItem>items)
+     {
+     
+     
+     }
+     
+  
