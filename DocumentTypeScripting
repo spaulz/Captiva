@@ -1,0 +1,35 @@
+namespace Custom.InputAccel.UimScript
+{
+  using System;
+  using System.Collections.Generic;
+  using System.Linq;
+  using System.Text;
+  using System.Windows.Controls;
+  
+  using Emc.InputAccel.CaptureClient;
+  using Emc.InputAccel.UimScript;
+  using System.Windows;
+  using System.Diagnostics;
+  
+  using System.Treading.Tasks;
+  using System.Net.Http;
+  using System.Net.Http.Headers;
+  using System.Xml.Linq;
+  using System.Windows.Forms;
+  
+  using Custom.InputAccel.Uimscript.Standard;
+  
+  class Script<documentType> : UimScriptDocument
+  
+  {
+  
+    //triggered when the document data is loaded
+     public void DocumentLoad(IUimDataContext dataContext)
+     {
+     }
+     
+     public void FormLoad(IUimDataEntryFormContext formContext)
+     {
+     }
+     
+        
