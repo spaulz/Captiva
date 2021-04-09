@@ -1,0 +1,29 @@
+namespace Custom.InputAccel.UimTaskScript
+{
+  using System;
+  using System.Collections.Generic;
+  using System.Drawing;
+  using System.IO;
+  using System.Linq;
+  using System.Text;
+  using System.Text.RegularExpressions;
+  using System.Threading;
+  using System.Windows.Forms;
+  using Custom.InputAccel.UimScript;
+  using Emc.InputAccel.UimScript;
+  
+ // This class is used  to implement the task level events like Taskload, NodeAdded, NodeDeleted, BeforeTaskFinish
+  
+  public class ScriptTask<Document type> : UimScriptTask
+  {
+    
+    public ScriptTask<Document type>(): base();
+    {
+    }
+    
+    public override TaskFinishAction BeforeTaskFinish(IUimNodeData taskNode,CloseReasonCode reasonCode)
+    {
+      
+    }
+  }
+ }
